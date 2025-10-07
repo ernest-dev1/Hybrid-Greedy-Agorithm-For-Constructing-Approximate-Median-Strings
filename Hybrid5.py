@@ -148,7 +148,7 @@ if __name__ == "__main__":
 
     # Refined median
     start = time.process_time()
-    median_refined = find_median_string(sigma, improve_steps=2)
+    median_refined = find_median_string(sigma, improve_steps=1)
     t_refined = time.process_time() - start
     cost_refined = total_distance(median_refined, sigma)
     print(f"[Refined] median = {median_refined} | total cost = {cost_refined} | CPU time = {t_refined:.6f}s")
